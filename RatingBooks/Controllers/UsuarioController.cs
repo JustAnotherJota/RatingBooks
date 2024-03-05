@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper.Configuration.Annotations;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using RatingBooks.Data.Dtos.LivroDtos;
 using RatingBooks.Data.Dtos.UsuarioDtos;
 using RatingBooks.Models;
 using RatingBooks.Services;
+using System.Net;
 using System.Security.Claims;
 
 namespace RatingBooks.Controllers
@@ -38,12 +41,15 @@ namespace RatingBooks.Controllers
             return Ok(login);
         }
 
-        //public async Task<IActionResult> DeslogarUsuario() 
-        //{
-        //}
+        [HttpPost("logoff")]
+        public async Task<IActionResult> DeslogarUsuario() 
+        {
+              await _usuarioService.Logoff();
+              return Ok();
+        }
 
         [HttpPost("criandoLivro")]
-        public async Task<IActionResult> CriarLivro(CreateLivroDto livroDto) 
+        public async Task<IActionResult> CriarLivro([FromBody]CreateLivroDto livroDto) 
         {
 
             if (!User.Identity.IsAuthenticated)
@@ -56,5 +62,17 @@ namespace RatingBooks.Controllers
             return Ok(resultado);
         }
 
+        [HttpDelete("deletandoLivro")]
+        public async Task<IActionResult> DeletarLivro(DeleteLivro livroDto)
+        {
+            if (!User.Identity.IsAuthenticated)
+                return Unauthorized();
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // UsuarioId = 66ffgs4343dy-rfdt432132 exemplo
+
+            var resultado = await _usuarioService.DeletarLivro(livroDto, userId);
+
+            return Ok(resultado);
+        }
     }
 }

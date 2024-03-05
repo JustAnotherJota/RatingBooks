@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RatingBooks.Migrations
 {
-    public partial class Usuario : Migration
+    public partial class UsuariDbContext : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -61,10 +61,10 @@ namespace RatingBooks.Migrations
                     Autor = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Editora = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Genero = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DataDeLancamento = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataDeLancamento = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    InicioDaLeitura = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    FimDaLeitura = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    InicioDaLeitura = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    FimDaLeitura = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Paginas = table.Column<int>(type: "int", nullable: false),
                     Analise = table.Column<string>(type: "nvarchar(max)", nullable: false),

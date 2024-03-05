@@ -24,7 +24,16 @@ namespace RatingBooks.Data.Dtos.LivroDtos
         public string Analise { get; set; }
         [Required]
         [Range(minimum: 1, maximum: 5)]
-        public int Nota { get; set; }
+        public double Nota { get; set; }
         public string UrlImagemCapaDoLivro { get; set; }
+
+        public CreateLivroDto()
+        {
+            SubTitulo = "";
+            Editora = "";
+            Genero = "";
+            Descricao = "";
+            UrlImagemCapaDoLivro = "";
+        }
     }
 }

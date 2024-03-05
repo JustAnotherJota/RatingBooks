@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using RatingBooks.Data;
 using RatingBooks.Data.Dtos.LivroDtos;
 using RatingBooks.Data.Dtos.UsuarioDtos;
@@ -43,6 +44,13 @@ namespace RatingBooks.Services
             return "Usuário Autenticado!";
         }
 
+        public async Task Logoff()
+        {
+            await _signInManager.SignOutAsync();
+        }
+
+
+        // criar livroController? validar melhor posteriormente
         public async Task<string> CriarLivro(CreateLivroDto livroDto, string userId) 
         {
             Livro livro = _mapper.Map<Livro>(livroDto);
@@ -54,7 +62,18 @@ namespace RatingBooks.Services
             await _context.SaveChangesAsync();
 
             return "Livro Adicionado com sucesso!";
-            
         }
+
+        public async Task<string> DeletarLivro(DeleteLivro livroDto, string userId)
+        {
+            Livro livro = await _context.Livros.SingleOrDefaultAsync(lvr => lvr.Id == livroDto.Id);
+
+            if (livro is null || !(livro.UsuarioId == userId))
+                return "Solicitação inválida";
+
+            _context.Livros.Remove(livro);
+            await _context.SaveChangesAsync();
+            return "Livro deletado!";
+        } 
     }
 }

@@ -12,8 +12,8 @@ using RatingBooks.Data;
 namespace RatingBooks.Migrations
 {
     [DbContext(typeof(UsuarioDbContext))]
-    [Migration("20240222185045_Usuario")]
-    partial class Usuario
+    [Migration("20240305175202_UsuariDbContext")]
+    partial class UsuariDbContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -173,7 +173,7 @@ namespace RatingBooks.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DataDeLancamento")
+                    b.Property<DateTime?>("DataDeLancamento")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
@@ -184,14 +184,14 @@ namespace RatingBooks.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FimDaLeitura")
+                    b.Property<DateTime?>("FimDaLeitura")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Genero")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("InicioDaLeitura")
+                    b.Property<DateTime?>("InicioDaLeitura")
                         .HasColumnType("datetime2");
 
                     b.Property<double>("Nota")

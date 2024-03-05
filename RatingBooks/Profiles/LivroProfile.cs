@@ -9,6 +9,7 @@ namespace RatingBooks.Profiles
         public LivroProfile()
         {
             CreateMap<CreateLivroDto, Livro>();
+            CreateMap<DeleteLivro, Livro>();
         }
     }
 }
