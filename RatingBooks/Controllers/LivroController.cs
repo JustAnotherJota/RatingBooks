@@ -74,5 +74,7 @@ namespace RatingBooks.Controllers
 
             return Ok(await _livroService.GetById(id,userId));
         }
+
+        //adicionar padrão early return 
     }
 }
