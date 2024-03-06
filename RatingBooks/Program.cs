@@ -18,6 +18,7 @@ builder.Services.AddIdentity<Usuario, IdentityRole>().AddEntityFrameworkStores<U
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddScoped<UsuarioService>(); //Instancia da classe
+builder.Services.AddScoped<LivroService>();//Instancia da classe
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

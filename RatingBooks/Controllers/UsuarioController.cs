@@ -25,7 +25,7 @@ namespace RatingBooks.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            await _usuarioService.Cadastra(dto);
+            await _usuarioService.CadastraUsuario(dto);
 
             return Ok("Usuario Cadastrado");
         }
@@ -48,31 +48,6 @@ namespace RatingBooks.Controllers
               return Ok();
         }
 
-        [HttpPost("criandoLivro")]
-        public async Task<IActionResult> CriarLivro([FromBody]CreateLivroDto livroDto) 
-        {
 
-            if (!User.Identity.IsAuthenticated)
-                return Unauthorized();
-
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var resultado = await _usuarioService.CriarLivro(livroDto, userId);
-
-            return Ok(resultado);
-        }
-
-        [HttpDelete("deletandoLivro")]
-        public async Task<IActionResult> DeletarLivro(DeleteLivro livroDto)
-        {
-            if (!User.Identity.IsAuthenticated)
-                return Unauthorized();
-
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // UsuarioId = 66ffgs4343dy-rfdt432132 exemplo
-
-            var resultado = await _usuarioService.DeletarLivro(livroDto, userId);
-
-            return Ok(resultado);
-        }
     }
 }

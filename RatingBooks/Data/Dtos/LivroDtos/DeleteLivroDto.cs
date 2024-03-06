@@ -2,7 +2,7 @@
 
 namespace RatingBooks.Data.Dtos.LivroDtos
 {
-    public class DeleteLivro
+    public class DeleteLivroDto
     {
         [Required]
         public int Id { get; set; }
