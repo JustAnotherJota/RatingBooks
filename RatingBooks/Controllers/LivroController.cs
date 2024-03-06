@@ -42,7 +42,7 @@ namespace RatingBooks.Controllers
             return Ok(resultado);
         }
 
-        [HttpGet("buscarLivro")]
+        [HttpGet("buscarLivros")]
         public async Task<IActionResult> GetAll()
         {
             if (!User.Identity.IsAuthenticated)
@@ -51,6 +51,28 @@ namespace RatingBooks.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             return Ok(await _livroService.GetAllLivros(userId));
+        }
+
+        [HttpGet("buscarLivro")]
+        public async Task<IActionResult> GetByName(string tituloLivro)
+        {
+            if (!User.Identity.IsAuthenticated)
+                return Unauthorized();
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            return Ok(await _livroService.GetByNameLivro(tituloLivro, userId));
+        }
+
+        [HttpGet("BuscarLivro/{id}")]
+        public async Task<IActionResult> GetById(int id) 
+        {
+            if (!User.Identity.IsAuthenticated)
+                return Unauthorized();
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            return Ok(await _livroService.GetById(id,userId));
         }
     }
 }

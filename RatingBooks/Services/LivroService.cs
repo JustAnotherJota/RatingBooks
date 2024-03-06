@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.Execution;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RatingBooks.Data;
@@ -50,9 +51,21 @@ namespace RatingBooks.Services
             return livrosDto;
         }
 
-        //public async Task<GetLivroDto> GetByIdLivro (string userId)
-        //{
-            
-        //}
+        public async Task<List<GetLivroDto>> GetByNameLivro (string tituloLivro,string userId)
+        {
+            List<Livro> livro = await _context.Livros.Where(lvr => lvr.UsuarioId == userId).Where(lvr => lvr.Titulo == tituloLivro).ToListAsync();
+
+            List<GetLivroDto> livroDto = _mapper.Map<List<GetLivroDto>>(livro);
+
+            return livroDto;
+        }
+
+        public async Task<GetLivroDto> GetById(int id, string userId)
+        {
+            Livro livro = await _context.Livros.Where(lvr => lvr.Id == id).Where(lvr => lvr.UsuarioId == userId).FirstAsync();
+            GetLivroDto livroDto = _mapper.Map<GetLivroDto>(livro);
+
+            return livroDto;
+        }
     }
 }
