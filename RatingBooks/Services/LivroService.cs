@@ -46,6 +46,9 @@ namespace RatingBooks.Services
         public async Task<List<GetLivroDto>> GetAllLivros(string userId) 
         {
             List<Livro> Livros = await _context.Livros.Where( lvr => lvr.UsuarioId == userId).ToListAsync();
+            if (Livros.Count <= 0)
+                return null;
+
             List<GetLivroDto> livrosDto = _mapper.Map<List<GetLivroDto>>(Livros);
 
             return livrosDto;
@@ -54,6 +57,8 @@ namespace RatingBooks.Services
         public async Task<List<GetLivroDto>> GetByNameLivro (string tituloLivro,string userId)
         {
             List<Livro> livro = await _context.Livros.Where(lvr => lvr.UsuarioId == userId).Where(lvr => lvr.Titulo == tituloLivro).ToListAsync();
+            if (livro.Count <= 0)
+                return null;
 
             List<GetLivroDto> livroDto = _mapper.Map<List<GetLivroDto>>(livro);
 
@@ -62,7 +67,10 @@ namespace RatingBooks.Services
 
         public async Task<GetLivroDto> GetById(int id, string userId)
         {
-            Livro livro = await _context.Livros.Where(lvr => lvr.Id == id).Where(lvr => lvr.UsuarioId == userId).FirstAsync();
+            Livro livro = await _context.Livros.Where(lvr => lvr.Id == id).Where(lvr => lvr.UsuarioId == userId).FirstOrDefaultAsync();
+            if (livro is null)
+                return null;
+
             GetLivroDto livroDto = _mapper.Map<GetLivroDto>(livro);
 
             return livroDto;

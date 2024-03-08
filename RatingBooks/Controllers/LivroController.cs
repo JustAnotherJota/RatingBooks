@@ -50,7 +50,12 @@ namespace RatingBooks.Controllers
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            return Ok(await _livroService.GetAllLivros(userId));
+            var resultado = await _livroService.GetAllLivros(userId);
+
+            if (resultado == null)
+                return NotFound("Que tal inserir um livro :D ?");
+
+            return Ok(resultado);
         }
 
         [HttpGet("buscarLivro")]
@@ -61,7 +66,12 @@ namespace RatingBooks.Controllers
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            return Ok(await _livroService.GetByNameLivro(tituloLivro, userId));
+            var resultado = await _livroService.GetByNameLivro(tituloLivro, userId);
+
+            if (resultado == null)
+                return NotFound("O livro solicitado não foi encontrado");
+
+            return Ok(resultado);
         }
 
         [HttpGet("BuscarLivro/{id}")]
@@ -72,7 +82,13 @@ namespace RatingBooks.Controllers
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            return Ok(await _livroService.GetById(id,userId));
+            var resultado = await _livroService.GetById(id, userId);
+
+            if (resultado == null) 
+            {
+                return NotFound("O livro solicitado não foi encontrado");
+            }
+            return Ok(resultado);
         }
 
         //adicionar padrão early return 
