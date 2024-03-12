@@ -75,5 +75,16 @@ namespace RatingBooks.Services
 
             return livroDto;
         }
+
+        public async Task<Livro> AtualizarLivro(int id, string userId, UpdateLivroDto livroUpdate)
+        {
+            Livro livro = await _context.Livros.Where(lvr => lvr.Id == id).Where(lvr => lvr.UsuarioId == userId).FirstOrDefaultAsync();
+            if (livro is null)
+                return null;
+
+            var livroDto = _mapper.Map(livroUpdate, livro);
+            await _context.SaveChangesAsync();
+            return livroDto;
+        }
     }
 }

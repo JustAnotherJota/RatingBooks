@@ -11,6 +11,8 @@ namespace RatingBooks.Profiles
             CreateMap<CreateLivroDto, Livro>();
             CreateMap<DeleteLivroDto, Livro>();
             CreateMap<Livro, GetLivroDto>();
+            CreateMap<Livro, UpdateLivroDto>();
+            CreateMap<UpdateLivroDto, Livro>();
         }
     }
 }

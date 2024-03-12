@@ -91,6 +91,22 @@ namespace RatingBooks.Controllers
             return Ok(resultado);
         }
 
+        [HttpPut("atualizarLivro/{id}")]
+        public async Task<IActionResult> AtualizaLivro(int id, UpdateLivroDto livroDto) 
+        {
+            if (!User.Identity.IsAuthenticated)
+                return Unauthorized();
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var resultado = await _livroService.AtualizarLivro(id, userId, livroDto);
+
+            if (resultado == null)
+                return NotFound("Livro não encontrado");
+
+            return NoContent();
+        }
+
         //adicionar padrão early return 
     }
 }
