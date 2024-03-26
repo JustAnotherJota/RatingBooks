@@ -5,10 +5,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RatingBooks.Migrations
 {
-    public partial class UsuariDbContext : Migration
+    public partial class Criandotabelas : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -74,6 +75,25 @@ namespace RatingBooks.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Livros", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Agendamentos",
+                columns: table => new
+                {
+                    AgendamentoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    LivroId = table.Column<int>(type: "int", nullable: false),
+                    AgendamentoData = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Agendamentos", x => x.AgendamentoId);
+                    table.ForeignKey(
+                        name: "FK_AgendamentoLivroId_PK_IdDeLivro",
+                        column: x => x.LivroId,
+                        principalTable: "Livros",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -224,6 +244,9 @@ namespace RatingBooks.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Agendamentos");
+
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 

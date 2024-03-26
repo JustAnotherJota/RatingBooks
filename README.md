@@ -15,7 +15,7 @@ O projeto conta como uma estrutura no qual separamos em:
 ## Services 
 - Aqui fica inserido as regras e o que a requisição invocada deve fazer, afim de ter um maior encapsulamento e também indepedência do código, podendo ser reaproveitado, caso necessário.
 ## Profiles
-- O profile tem o intuito de realizar o mapeamento para os dados de Models e dos DTOs serem transmitidos entrem sí, possibilitando a trafegação de apenas dados necessários.
+- O profile tem o intuito de realizar o mapeamento para os dados de Models e dos DTOs serem transmitidos entrem sí, possibilitando apenas o trafego de dados necessários.
 ## Data
 - Aqui será onde possibilitamos a interação com o banco do dados e também onde declaramos nossos DTOs.
 

@@ -23,7 +23,7 @@ namespace RatingBooks.Models
         public string Analise { get; set; }
         public double Nota { get; set; }
         public string UrlImagemCapaDoLivro { get; set; }
-          
+
         public Livro()
         {
 

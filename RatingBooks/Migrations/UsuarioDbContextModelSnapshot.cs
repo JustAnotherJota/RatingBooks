@@ -155,6 +155,23 @@ namespace RatingBooks.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("RatingBooks.Models.Agendamento", b =>
+                {
+                    b.Property<string>("AgendamentoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("AgendamentoData")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("LivroId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AgendamentoId");
+
+                    b.ToTable("Agendamentos");
+                });
+
             modelBuilder.Entity("RatingBooks.Models.Livro", b =>
                 {
                     b.Property<int>("Id")

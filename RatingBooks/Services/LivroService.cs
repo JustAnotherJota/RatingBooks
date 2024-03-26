@@ -84,7 +84,17 @@ namespace RatingBooks.Services
 
             var livroDto = _mapper.Map(livroUpdate, livro);
             await _context.SaveChangesAsync();
+
+            //AgendamentoTeste(livroDto);
+
             return livroDto;
         }
+
+        //public async Task AgendamentoTeste(Livro livro) 
+        //{
+        //    if (!livro.Status == "Finalizado")
+        //        return;
+            
+        //}
     }
 }

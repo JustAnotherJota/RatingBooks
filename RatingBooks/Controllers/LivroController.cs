@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RatingBooks.Data.Dtos.LivroDtos;
+using RatingBooks.Models;
 using RatingBooks.Services;
 using System.Security.Claims;
+using static RatingBooks.Models.Livro;
 
 namespace RatingBooks.Controllers
 {
@@ -10,14 +12,21 @@ namespace RatingBooks.Controllers
     public class LivroController : ControllerBase
     {
         private LivroService _livroService;
-        public LivroController(LivroService livroService)
+        private StatusLivro _statusLivro;
+        public LivroController(LivroService livroService, StatusLivro statusLivro)
         {
             _livroService = livroService;
+            _statusLivro = statusLivro;
         }
 
         [HttpPost("criandoLivro")]
         public async Task<IActionResult> CriarLivro([FromBody] CreateLivroDto livroDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            if (!_statusLivro.statusLivroArray.Contains(livroDto.Status))
+                return BadRequest("O status do livro necessita ser inserido corretamente");
 
             if (!User.Identity.IsAuthenticated)
                 return Unauthorized();
@@ -32,6 +41,9 @@ namespace RatingBooks.Controllers
         [HttpDelete("deletandoLivro")]
         public async Task<IActionResult> DeletarLivro(DeleteLivroDto livroDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
             if (!User.Identity.IsAuthenticated)
                 return Unauthorized();
 
@@ -94,6 +106,12 @@ namespace RatingBooks.Controllers
         [HttpPut("atualizarLivro/{id}")]
         public async Task<IActionResult> AtualizaLivro(int id, UpdateLivroDto livroDto) 
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            if (!_statusLivro.statusLivroArray.Contains(livroDto.Status))
+                return BadRequest("O status do livro necessita ser inserido corretamente");
+
             if (!User.Identity.IsAuthenticated)
                 return Unauthorized();
 

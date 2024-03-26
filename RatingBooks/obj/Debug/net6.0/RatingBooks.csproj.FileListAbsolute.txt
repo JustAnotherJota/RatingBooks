@@ -66,9 +66,10 @@ C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\staticwebassets
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\scopedcss\bundle\RatingBooks.styles.css
-C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.csproj.CopyComplete
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.dll
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\refint\RatingBooks.dll
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.pdb
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.genruntimeconfig.cache
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\ref\RatingBooks.dll
+C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.sourcelink.json
+C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBo.DEED4A10.Up2Date

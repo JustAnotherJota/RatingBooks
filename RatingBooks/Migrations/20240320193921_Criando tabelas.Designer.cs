@@ -12,8 +12,8 @@ using RatingBooks.Data;
 namespace RatingBooks.Migrations
 {
     [DbContext(typeof(UsuarioDbContext))]
-    [Migration("20240305175202_UsuariDbContext")]
-    partial class UsuariDbContext
+    [Migration("20240320193921_Criando tabelas")]
+    partial class Criandotabelas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -155,6 +155,23 @@ namespace RatingBooks.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("RatingBooks.Models.Agendamento", b =>
+                {
+                    b.Property<string>("AgendamentoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("AgendamentoData")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("LivroId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AgendamentoId");
+
+                    b.ToTable("Agendamentos");
                 });
 
             modelBuilder.Entity("RatingBooks.Models.Livro", b =>

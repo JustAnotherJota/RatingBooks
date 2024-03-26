@@ -12,5 +12,6 @@ namespace RatingBooks.Data
         }
 
         public DbSet<Livro> Livros { get; set; }
+        public DbSet<Agendamento> Agendamentos { get; set; }
     }
 }
