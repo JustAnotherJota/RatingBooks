@@ -167,6 +167,10 @@ namespace RatingBooks.Migrations
                     b.Property<int>("LivroId")
                         .HasColumnType("int");
 
+                    b.Property<string>("UsuarioId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("AgendamentoId");
 
                     b.ToTable("Agendamentos");

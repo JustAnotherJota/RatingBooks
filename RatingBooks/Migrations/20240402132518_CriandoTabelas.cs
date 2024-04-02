@@ -5,11 +5,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RatingBooks.Migrations
 {
-    public partial class Criandotabelas : Migration
+    public partial class CriandoTabelas : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -83,7 +82,8 @@ namespace RatingBooks.Migrations
                 {
                     AgendamentoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     LivroId = table.Column<int>(type: "int", nullable: false),
-                    AgendamentoData = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    AgendamentoData = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UsuarioId = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

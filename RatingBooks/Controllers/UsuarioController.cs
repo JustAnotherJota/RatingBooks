@@ -14,7 +14,7 @@ namespace RatingBooks.Controllers
     [Route("[Controller]")]
     public class UsuarioController : ControllerBase
     {
-        private UsuarioService _usuarioService;
+        private readonly UsuarioService _usuarioService;
         public UsuarioController(UsuarioService service)
         {
             _usuarioService = service;

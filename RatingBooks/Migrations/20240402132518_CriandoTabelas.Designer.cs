@@ -12,8 +12,8 @@ using RatingBooks.Data;
 namespace RatingBooks.Migrations
 {
     [DbContext(typeof(UsuarioDbContext))]
-    [Migration("20240320193921_Criando tabelas")]
-    partial class Criandotabelas
+    [Migration("20240402132518_CriandoTabelas")]
+    partial class CriandoTabelas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -168,6 +168,10 @@ namespace RatingBooks.Migrations
 
                     b.Property<int>("LivroId")
                         .HasColumnType("int");
+
+                    b.Property<string>("UsuarioId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AgendamentoId");
 

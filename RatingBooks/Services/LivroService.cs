@@ -10,8 +10,8 @@ namespace RatingBooks.Services
 {
     public class LivroService
     {
-        private IMapper _mapper;
-        private UsuarioDbContext _context;
+        private readonly IMapper _mapper;
+        private readonly UsuarioDbContext _context;
         public LivroService(IMapper mapper, UsuarioDbContext context)
         {
             _mapper = mapper;

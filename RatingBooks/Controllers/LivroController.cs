@@ -11,8 +11,8 @@ namespace RatingBooks.Controllers
     [Route("[Controller]")]
     public class LivroController : ControllerBase
     {
-        private LivroService _livroService;
-        private StatusLivro _statusLivro;
+        private readonly LivroService _livroService;
+        private readonly StatusLivro _statusLivro;
         public LivroController(LivroService livroService, StatusLivro statusLivro)
         {
             _livroService = livroService;

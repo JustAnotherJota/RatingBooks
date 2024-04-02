@@ -15,5 +15,7 @@ namespace RatingBooks.Models
         public string AgendamentoId { get; set; }
         [Required]
         public DateTime AgendamentoData { get; set; }
+        [Required]
+        public string UsuarioId { get; set; }
     }
 }

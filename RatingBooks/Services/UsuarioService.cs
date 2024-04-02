@@ -10,9 +10,9 @@ namespace RatingBooks.Services
 {
     public class UsuarioService
     {
-        private IMapper _mapper;
-        private UserManager<Usuario> _userManager;
-        private SignInManager<Usuario> _signInManager;
+        private readonly IMapper _mapper;
+        private readonly UserManager<Usuario> _userManager;
+        private readonly SignInManager<Usuario> _signInManager;
         public UsuarioService(IMapper mapper, UserManager<Usuario> userManager, SignInManager<Usuario> signInManager)
         {
             _mapper = mapper;
