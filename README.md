@@ -6,7 +6,9 @@ O projeto inicialmente foca no backend, sendo uma aplicação .Net 6.0 com o uso
 
 A ideia é de um site em que a funcionalidade principal é na avaliação e descrição dos livros, contendo também a possibilidade de um agendamento com o livro criado para que possa ser lido posteriormente, fazendo com que haja um comprometimento pela parte do usuário. Vale citar que ideias como progressão de leitura foram levados em consideração, porém, inicialmente o projeto contará com a criação e autenticação de um usuário e, assim, cada usuário capaz de fornecer as informações dos livros que está lendo no presente momento, assim como também a possibilidade de registrar livros que foram lidos no passado, essa marcação se da pela funcionalidade de Status do Livro em que se pode declarar o livro como concluido. A avaliação por parte dos livros ainda é dada em um rating de 0 a 5 estrelas e não em uma nota de 1 a 10, foram levados em consideração sites de compras, como Amazon, MagazineLuiza e MercadoLivre, que avaliam o produto até 5 estrelas e também sites que avaliam animações, como o MyAnimeList, qual é possível dar uma nota de até 10.
 
-O projeto conta como uma estrutura no qual separamos em:
+O projeto conta como uma estrutura no qual separamos em:  
+
+## A estrutura foi atualiazada para o padrão DDD (Domain Driven Design) o README será atualiazado em breve. O padrão até então era: 
 
 ## Models
 - No Models, informamos quais propriedades e métodos nosso Modelo principal de classe irá possuir.
@@ -47,11 +49,3 @@ Para Registrar um livro, será possível adicionar alguma das seguintes propried
 	-> Status da Leitura
 	-> Agendar uma data para continuar a leitura se desejar e não tiver concluído o livro
 	-> Fazer sua própria análise do livro
-
-Tem-se uma ideia inicial de como poderia ser realizado o front-end da aplicação:
-
-Seria usado o framework Angular
-
-	-> As pessoas poderão adicionar uma imagem do livro como capa e abaixo terão informações sobre a avaliação, status de leitura e agendamento
-
-	-> Será possível organizar por ordem de estrelas, ordem de status e ordem de capítulos/páginas
