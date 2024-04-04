@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RatingBooks.Data.Dtos.LivroDtos;
-using RatingBooks.Models;
-using RatingBooks.Services;
+using RatingBooks.Application.Services;
+using RatingBooks.Domain.Dtos.LivroDtos;
+using RatingBooks.Domain.Entidades;
 using System.Security.Claims;
-using static RatingBooks.Models.Livro;
 
 namespace RatingBooks.Controllers
 {

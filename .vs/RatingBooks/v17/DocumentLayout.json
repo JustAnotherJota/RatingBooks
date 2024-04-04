@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\J\\source\\repos\\RatingBooks\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks\\services\\agendamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|solutionrelative:ratingbooks\\services\\agendamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks\\services\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|solutionrelative:ratingbooks\\services\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,32 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AgendamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Services\\AgendamentoService.cs",
-              "RelativeDocumentMoniker": "RatingBooks\\Services\\AgendamentoService.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Services\\AgendamentoService.cs",
-              "RelativeToolTip": "RatingBooks\\Services\\AgendamentoService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T14:01:01.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LivroService.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Services\\LivroService.cs",
-              "RelativeDocumentMoniker": "RatingBooks\\Services\\LivroService.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Services\\LivroService.cs",
-              "RelativeToolTip": "RatingBooks\\Services\\LivroService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T14:01:00.696Z",
-              "EditorCaption": ""
             }
           ]
         }

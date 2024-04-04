@@ -1,31 +1,30 @@
-using AutoMapper.Configuration.Annotations;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using RatingBooks.Data;
-using RatingBooks.Models;
-using RatingBooks.Services;
+using RatingBooks.Application.Configuration;
+using RatingBooks.Persistance.Configuration;
+using RatingBooks.Domain.Entidades;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var service = builder.Services;
+
 // Add services to the container.
+
+//builder.Services.AddDbContext<UsuarioDbContext>(opts => { opts.UseSqlServer(_conn); });
+
+//builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+service.RegisterApplication(); //Injeção de Dependência está sendo realizada aqui
 
 var _conn = builder.Configuration.GetConnectionString("BookUsersConnection");
 
-builder.Services.AddDbContext<UsuarioDbContext>(opts => { opts.UseSqlServer(_conn); });
+service.RegisterPersistance(_conn);
 
-builder.Services.AddIdentity<Usuario, IdentityRole>().AddEntityFrameworkStores<UsuarioDbContext>().AddDefaultTokenProviders();
+service.AddIdentity<Usuario, IdentityRole>().AddEntityFrameworkStores<UsuarioDbContext>().AddDefaultTokenProviders();
 
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-builder.Services.AddScoped<UsuarioService>(); //Instancia da classe
-builder.Services.AddScoped<LivroService>();//Instancia da classe
-builder.Services.AddScoped<StatusLivro>();//Instancia da classe
-builder.Services.AddScoped<AgendamentoService>();//Instancia da classe
-
-builder.Services.AddControllers();
+service.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+service.AddEndpointsApiExplorer();
+service.AddSwaggerGen();
 
 var app = builder.Build();
 

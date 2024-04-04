@@ -1,0 +1,13 @@
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\bin\Debug\net6.0\RatingBooks.Domain.deps.json
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\bin\Debug\net6.0\RatingBooks.Domain.dll
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\bin\Debug\net6.0\RatingBooks.Domain.pdb
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.csproj.AssemblyReference.cache
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.AssemblyInfoInputs.cache
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.AssemblyInfo.cs
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.csproj.CoreCompileInputs.cache
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.sourcelink.json
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.dll
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\refint\RatingBooks.Domain.dll
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\RatingBooks.Domain.pdb
+C:\Users\J\source\repos\RatingBooks\RatingBooks.Domain\obj\Debug\net6.0\ref\RatingBooks.Domain.dll

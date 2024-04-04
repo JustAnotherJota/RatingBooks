@@ -1,12 +1,7 @@
-﻿using AutoMapper.Configuration.Annotations;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc;
-using RatingBooks.Data.Dtos.LivroDtos;
-using RatingBooks.Data.Dtos.UsuarioDtos;
-using RatingBooks.Models;
-using RatingBooks.Services;
-using System.Net;
-using System.Security.Claims;
+﻿using Microsoft.AspNetCore.Mvc;
+using RatingBooks.Application.Services;
+using RatingBooks.Domain.Dtos.UsuarioDtos;
+
 
 namespace RatingBooks.Controllers
 {

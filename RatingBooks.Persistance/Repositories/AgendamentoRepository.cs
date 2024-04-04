@@ -1,0 +1,69 @@
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using RatingBooks.Domain.Dtos.AgendamentoDtos;
+using RatingBooks.Domain.Entidades;
+using RatingBooks.Domain.Repository;
+using RatingBooks.Persistance.Configuration;
+
+namespace RatingBooks.Persistance.Repositories
+{
+    public class AgendamentoRepository : IAgendamentoRepository
+    {
+        private readonly UsuarioDbContext _context;
+        private readonly IMapper _mapper;
+        private readonly LivroRepository _livroRepository;
+
+        public AgendamentoRepository(IMapper mapper, UsuarioDbContext context, LivroRepository livroRepository)
+        {
+            _mapper = mapper;
+            _context = context;
+            _livroRepository = livroRepository;
+        }
+        public async Task<string> Agendar(CreateAgendamentoDto agendamentoDto, string userId)
+        {
+            Agendamento agendamento = _mapper.Map<Agendamento>(agendamentoDto);
+            agendamento.UsuarioId = userId;
+
+            _context.Add(agendamento);
+            await _context.SaveChangesAsync();
+
+            return "Livro Agendado :D";
+        }
+        public async Task<List<GetAgendamentoDto>> TodosOsAgendamentos(string userId)
+        {
+            List<Agendamento> agendamentos = await _context.Agendamentos.Where(x => x.UsuarioId == userId).ToListAsync();
+
+            List<GetAgendamentoDto> agendamentosDto = _mapper.Map<List<GetAgendamentoDto>>(agendamentos);
+
+            //agendamentosDto.ForEach(async x => x.livrosAgendados = await _livroService.GetById(x.LivroId, userId));
+
+            foreach (var item in agendamentosDto)
+            {
+                item.livrosAgendados = await _livroRepository.GetById(item.LivroId, userId);
+            }
+
+            return agendamentosDto;
+        }
+        public async Task<List<GetAgendamentoDto>> LivrosExpirados(string userId)
+        {
+            List<Agendamento> agendamentos = await _context.Agendamentos.Where(x => x.UsuarioId == userId).ToListAsync();
+
+            List<GetAgendamentoDto> agendamentosDto = _mapper.Map<List<GetAgendamentoDto>>(agendamentos);
+
+            List<GetAgendamentoDto> agendamentosExpiradosDto = new List<GetAgendamentoDto>();
+
+            foreach (var item in agendamentosDto)
+            {
+                if (item.AgendamentoData < DateTime.Now)
+                {
+                    item.livrosAgendados = await _livroRepository.GetById(item.LivroId, userId);
+                    agendamentosExpiradosDto.Add(item);
+                }
+            }
+
+            return agendamentosExpiradosDto;
+        }
+
+        //public async Task<List<Agendamento>> LivrosAgendados()
+    }
+}

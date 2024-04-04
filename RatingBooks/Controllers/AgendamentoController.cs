@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using RatingBooks.Data.Dtos.AgendamentoDtos;
-using RatingBooks.Services;
+﻿using AutoMapper.Configuration.Annotations;
+using Microsoft.AspNetCore.Mvc;
+using RatingBooks.Application.Services;
+using RatingBooks.Domain.Dtos.AgendamentoDtos;
+using System.Runtime.InteropServices;
 using System.Security.Claims;
 
 namespace RatingBooks.Controllers
@@ -34,15 +36,25 @@ namespace RatingBooks.Controllers
         [HttpGet("TodosLivrosAgendados")]
         public async Task<IActionResult> GetAllAgendados() 
         {
-            if (!ModelState.IsValid)
-                return BadRequest();
-
             if (!User.Identity.IsAuthenticated)
                 return Unauthorized();
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var resultado = await _agendamentoService.TodosOsAgendamentos(userId);
+
+            return Ok(resultado);
+        }
+
+        [HttpGet("AgendamentoExpirado")]
+        public async Task<IActionResult> GetAgendamentoExpirado() 
+        {
+            if (!User.Identity.IsAuthenticated)
+                return Unauthorized();
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var resultado = await _agendamentoService.LivrosExpirados(userId);
 
             return Ok(resultado);
         }

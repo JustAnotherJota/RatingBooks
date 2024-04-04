@@ -3,7 +3,6 @@ C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.Gen
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.AssemblyInfoInputs.cache
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.AssemblyInfo.cs
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.csproj.CoreCompileInputs.cache
-C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\appsettings.json
@@ -73,3 +72,10 @@ C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.gen
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\ref\RatingBooks.dll
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.sourcelink.json
 C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBo.DEED4A10.Up2Date
+C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\RatingBooks.Application.dll
+C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\RatingBooks.Domain.dll
+C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\RatingBooks.Persistance.dll
+C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\RatingBooks.Application.pdb
+C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\RatingBooks.Persistance.pdb
+C:\Users\J\source\repos\RatingBooks\RatingBooks\bin\Debug\net6.0\RatingBooks.Domain.pdb
+C:\Users\J\source\repos\RatingBooks\RatingBooks\obj\Debug\net6.0\RatingBooks.MvcApplicationPartsAssemblyInfo.cs
