@@ -28,7 +28,7 @@ O projeto conta como uma estrutura no qual separamos em:
 
 ## Então temos:
 
-Sistema de Avaliação : 
+Sistema de Avaliação: 
 	
     -> nota de 0 a 5.
 
@@ -36,21 +36,16 @@ Registro de usuário / Nome de Usuário e Senha
 
 	-> Para criar uma conta, será necessário fornecer:
 	nome de usuário, senha, repetir a senha e data de nascimento.
- 
-	-> O livro poderá ter Status do Livro e em qual estágio o usuário está
-	Status da Leitura possíveis: iniciado, metade do livro, quase concluído, concluído
 
+Agendamento de um livro
 
-Uma funcionalidade que será implementada será: se o Status da Leitura for (!concluído / diferente de concluido)
-
-	-> Gostaria de agendar uma data e horário para continuar a leitura?
-	-> reservar data para ler os livros
+	-> Qual data deseja agendar o livro
+	-> Será possível identificar livros com datas expiradas, apenas livros com a data maior que a atual e todos livros
 
 
 Para Registrar um livro, será possível adicionar alguma das seguintes propriedades:
 
 	-> Quantas páginas e capítulos tem (opcional)
-	-> Quantas estrelas você daria a ele
-	-> Status da Leitura
-	-> Agendar uma data para continuar a leitura se desejar e não tiver concluído o livro
+	-> Qual a nota
+	-> Status da Leitura ("Começo", "Meio", "Final" e "Finalizado")
 	-> Fazer sua própria análise do livro
