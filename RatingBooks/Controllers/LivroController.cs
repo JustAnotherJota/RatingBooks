@@ -123,7 +123,5 @@ namespace RatingBooks.Controllers
 
             return NoContent();
         }
-
-        //adicionar padrão early return 
     }
 }

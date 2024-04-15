@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RatingBooks.Persistance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33ee4d9fcb2ba62a8b89e07084c70d5dff0a2427")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2dabb1330f899320bc694a2ce64f6706cac7b71")]
 [assembly: System.Reflection.AssemblyProductAttribute("RatingBooks.Persistance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RatingBooks.Persistance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

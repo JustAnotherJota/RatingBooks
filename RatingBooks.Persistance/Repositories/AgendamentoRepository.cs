@@ -50,7 +50,7 @@ namespace RatingBooks.Persistance.Repositories
 
             List<GetAgendamentoDto> agendamentosDto = _mapper.Map<List<GetAgendamentoDto>>(agendamentos);
 
-            List<GetAgendamentoDto> agendamentosExpiradosDto = new List<GetAgendamentoDto>();
+            List<GetAgendamentoDto> agendamentosExpiradosDto = new();
 
             foreach (var item in agendamentosDto)
             {
@@ -64,6 +64,52 @@ namespace RatingBooks.Persistance.Repositories
             return agendamentosExpiradosDto;
         }
 
-        //public async Task<List<Agendamento>> LivrosAgendados()
+        public async Task<List<GetAgendamentoDto>> LivrosNaoExpirados(string userId)
+        {
+            List<Agendamento> agendamentos = await _context.Agendamentos.Where(x => x.AgendamentoData > DateTime.Now && x.UsuarioId == userId).ToListAsync();
+
+            List<GetAgendamentoDto> agendamentoDto = _mapper.Map<List<GetAgendamentoDto>>(agendamentos);
+
+            List<GetAgendamentoDto> agendamentoDtosNaoExpirados = new();
+
+            foreach (var item in agendamentoDto)
+            {
+                if (item.AgendamentoData > DateTime.Now)
+                {
+                    item.livrosAgendados = await _livroRepository.GetById(item.LivroId, userId);
+                    agendamentoDtosNaoExpirados.Add(item);
+                }
+            }
+            return agendamentoDtosNaoExpirados;
+        }
+
+        public async Task<Agendamento> AtualiarDataAgendada(int id, UpdateAgendamentoDto agendamentoDto, string userId)
+        {
+            Agendamento agendamento = await _context.Agendamentos.Where(x => x.UsuarioId == userId && x.LivroId == id).FirstOrDefaultAsync();
+
+            if (agendamento is null)
+                return null;
+
+            var agendamentoAtualiadoDto = _mapper.Map(agendamentoDto, agendamento);
+            await _context.SaveChangesAsync();
+
+            return agendamentoAtualiadoDto;
+        }
+
+        public async Task<string> Deletar(int id, string userId)
+        {
+            Agendamento agendamento = await _context.Agendamentos.Where(x => x.LivroId == id && x.UsuarioId == userId).FirstOrDefaultAsync();
+
+            if (agendamento is null || agendamento.UsuarioId != userId)
+                return "Solicitação inválida";
+
+            _context.Agendamentos.Remove(agendamento);
+
+            await _context.SaveChangesAsync();
+
+            return "Lidro Deletado";
+        }
+
+        //UpdateAgendamento  agendamentoDto.LivroId = id;  passar o LivroId atraves de parametro int Id ???
     }
 }

@@ -10,6 +10,7 @@ namespace RatingBooks.Persistance.Mapping.Profiles
         {
             CreateMap<Agendamento, GetAgendamentoDto>();
             CreateMap<CreateAgendamentoDto, Agendamento>();
+            CreateMap<UpdateAgendamentoDto, Agendamento>();
         }
     }
 }

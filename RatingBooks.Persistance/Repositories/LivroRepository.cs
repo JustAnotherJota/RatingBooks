@@ -2,12 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using RatingBooks.Domain.Dtos.LivroDtos;
 using RatingBooks.Domain.Entidades;
+using RatingBooks.Domain.Repository;
 using RatingBooks.Persistance.Configuration;
 
 
 namespace RatingBooks.Persistance.Repositories
 {
-    public class LivroRepository 
+    public class LivroRepository : ILivroRepository
     {
         private readonly IMapper _mapper;
         private readonly UsuarioDbContext _context;
