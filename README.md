@@ -1,6 +1,6 @@
 # RatingBooks
 
-Sistema de Livros para avaliar e agendar um compromisso para continuar a leitura (Projeto ainda em andamento)
+Sistema de Livros para avaliar e agendar um compromisso para continuar a leitura
 
 O projeto inicialmente foca no backend, sendo uma aplicação .Net 6.0 com o uso de pacotes NuGet como:
 	
