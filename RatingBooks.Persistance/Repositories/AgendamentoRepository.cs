@@ -21,7 +21,11 @@ namespace RatingBooks.Persistance.Repositories
         }
         public async Task<string> Agendar(CreateAgendamentoDto agendamentoDto, string userId)
         {
+            if (await AgendamentoById(agendamentoDto.LivroId, userId) != null)
+                return "Esse livro já foi agendado";
+
             Agendamento agendamento = _mapper.Map<Agendamento>(agendamentoDto);
+
             agendamento.UsuarioId = userId;
 
             _context.Add(agendamento);
@@ -29,6 +33,15 @@ namespace RatingBooks.Persistance.Repositories
 
             return "Livro Agendado :D";
         }
+
+        public async Task<Agendamento?> AgendamentoById(int id, string userId) 
+        {
+            Agendamento? validandoIdExistente = await _context.Agendamentos.Where(x => x.UsuarioId == userId && x.LivroId == id).FirstOrDefaultAsync();
+            if (validandoIdExistente != null)
+                return validandoIdExistente;
+            return null;
+        }
+
         public async Task<List<GetAgendamentoDto>> TodosOsAgendamentos(string userId)
         {
             List<Agendamento> agendamentos = await _context.Agendamentos.Where(x => x.UsuarioId == userId).ToListAsync();
