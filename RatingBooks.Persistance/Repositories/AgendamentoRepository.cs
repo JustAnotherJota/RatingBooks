@@ -34,9 +34,9 @@ namespace RatingBooks.Persistance.Repositories
             return "Livro Agendado :D";
         }
 
-        public async Task<Agendamento?> AgendamentoById(int id, string userId) 
+        public async Task<Agendamento> AgendamentoById(int id, string userId) 
         {
-            Agendamento? validandoIdExistente = await _context.Agendamentos.Where(x => x.UsuarioId == userId && x.LivroId == id).FirstOrDefaultAsync();
+            Agendamento validandoIdExistente = await _context.Agendamentos.Where(x => x.UsuarioId == userId && x.LivroId == id).FirstOrDefaultAsync();
             if (validandoIdExistente != null)
                 return validandoIdExistente;
             return null;

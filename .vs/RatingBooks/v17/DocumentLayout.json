@@ -7,56 +7,32 @@
       "RelativeMoniker": "D:0:0:{A1AABABE-2E96-4567-9415-B4CA2F87513E}|RatingBooks.Persistance\\RatingBooks.Persistance.csproj|solutionrelative:ratingbooks.persistance\\repositories\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\repository\\iagendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\repository\\iagendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|solutionrelative:ratingbooks\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A1AABABE-2E96-4567-9415-B4CA2F87513E}|RatingBooks.Persistance\\RatingBooks.Persistance.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.persistance\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1AABABE-2E96-4567-9415-B4CA2F87513E}|RatingBooks.Persistance\\RatingBooks.Persistance.csproj|solutionrelative:ratingbooks.persistance\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A8453A-8F24-4CA1-81C6-7F6AD33E5A19}|RatingBooks.Application\\RatingBooks.Application.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.application\\services\\agendamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A8453A-8F24-4CA1-81C6-7F6AD33E5A19}|RatingBooks.Application\\RatingBooks.Application.csproj|solutionrelative:ratingbooks.application\\services\\agendamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9A8453A-8F24-4CA1-81C6-7F6AD33E5A19}|RatingBooks.Application\\RatingBooks.Application.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.application\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9A8453A-8F24-4CA1-81C6-7F6AD33E5A19}|RatingBooks.Application\\RatingBooks.Application.csproj|solutionrelative:ratingbooks.application\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\dtos\\agendamentodtos\\getagendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\dtos\\agendamentodtos\\getagendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\dtos\\agendamentodtos\\createagendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\dtos\\agendamentodtos\\createagendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks\\controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|solutionrelative:ratingbooks\\controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{300ABFDE-BFAE-4473-B075-0EC53F2C69CE}|RatingBooks\\RatingBooks.csproj|solutionrelative:ratingbooks\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\entidades\\statuslivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\entidades\\statuslivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\repository\\iagendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\repository\\iagendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\entidades\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\entidades\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\dtos\\livrodtos\\createlivrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\dtos\\livrodtos\\createlivrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9A8453A-8F24-4CA1-81C6-7F6AD33E5A19}|RatingBooks.Application\\RatingBooks.Application.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.application\\services\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9A8453A-8F24-4CA1-81C6-7F6AD33E5A19}|RatingBooks.Application\\RatingBooks.Application.csproj|solutionrelative:ratingbooks.application\\services\\livroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\repository\\ilivrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\repository\\ilivrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1AABABE-2E96-4567-9415-B4CA2F87513E}|RatingBooks.Persistance\\RatingBooks.Persistance.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.persistance\\mapping\\profiles\\agendamentoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1AABABE-2E96-4567-9415-B4CA2F87513E}|RatingBooks.Persistance\\RatingBooks.Persistance.csproj|solutionrelative:ratingbooks.persistance\\mapping\\profiles\\agendamentoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|c:\\users\\j\\source\\repos\\ratingbooks\\ratingbooks.domain\\dtos\\agendamentodtos\\updateagendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA2B77AF-9DF7-4B87-8658-82DCAE67EBBC}|RatingBooks.Domain\\RatingBooks.Domain.csproj|solutionrelative:ratingbooks.domain\\dtos\\agendamentodtos\\updateagendamentodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,54 +58,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AgendamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\AgendamentoController.cs",
-              "RelativeDocumentMoniker": "RatingBooks\\Controllers\\AgendamentoController.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\AgendamentoController.cs",
-              "RelativeToolTip": "RatingBooks\\Controllers\\AgendamentoController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:52:03.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AgendamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\AgendamentoService.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Application\\Services\\AgendamentoService.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\AgendamentoService.cs",
-              "RelativeToolTip": "RatingBooks.Application\\Services\\AgendamentoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAvwBEAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:51:32.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LivroRepository.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
-              "RelativeToolTip": "RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:50:57.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "IAgendamentoRepository.cs",
               "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Repository\\IAgendamentoRepository.cs",
               "RelativeDocumentMoniker": "RatingBooks.Domain\\Repository\\IAgendamentoRepository.cs",
               "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Repository\\IAgendamentoRepository.cs",
               "RelativeToolTip": "RatingBooks.Domain\\Repository\\IAgendamentoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAA5AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:48:23.193Z",
+              "WhenOpened": "2024-04-16T17:52:00.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Livro.cs",
+              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Entidades\\Livro.cs",
+              "RelativeDocumentMoniker": "RatingBooks.Domain\\Entidades\\Livro.cs",
+              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Entidades\\Livro.cs",
+              "RelativeToolTip": "RatingBooks.Domain\\Entidades\\Livro.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T17:51:54.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateLivroDto.cs",
+              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\LivroDtos\\CreateLivroDto.cs",
+              "RelativeDocumentMoniker": "RatingBooks.Domain\\Dtos\\LivroDtos\\CreateLivroDto.cs",
+              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\LivroDtos\\CreateLivroDto.cs",
+              "RelativeToolTip": "RatingBooks.Domain\\Dtos\\LivroDtos\\CreateLivroDto.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAkwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T17:51:08.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LivroService.cs",
+              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\LivroService.cs",
+              "RelativeDocumentMoniker": "RatingBooks.Application\\Services\\LivroService.cs",
+              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\LivroService.cs",
+              "RelativeToolTip": "RatingBooks.Application\\Services\\LivroService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T17:51:25.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LivroController.cs",
+              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\LivroController.cs",
+              "RelativeDocumentMoniker": "RatingBooks\\Controllers\\LivroController.cs",
+              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\LivroController.cs",
+              "RelativeToolTip": "RatingBooks\\Controllers\\LivroController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwB0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T17:50:59.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StatusLivro.cs",
+              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Entidades\\StatusLivro.cs",
+              "RelativeDocumentMoniker": "RatingBooks.Domain\\Entidades\\StatusLivro.cs",
+              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Entidades\\StatusLivro.cs",
+              "RelativeToolTip": "RatingBooks.Domain\\Entidades\\StatusLivro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T17:47:13.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LivroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
+              "RelativeDocumentMoniker": "RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
+              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
+              "RelativeToolTip": "RatingBooks.Persistance\\Repositories\\LivroRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T17:40:55.748Z",
               "EditorCaption": ""
             },
             {
@@ -140,122 +155,10 @@
               "RelativeDocumentMoniker": "RatingBooks.Persistance\\Repositories\\AgendamentoRepository.cs",
               "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Persistance\\Repositories\\AgendamentoRepository.cs",
               "RelativeToolTip": "RatingBooks.Persistance\\Repositories\\AgendamentoRepository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAIAwwCEAAAAnAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T01:56:12.775Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateAgendamentoDto.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\AgendamentoDtos\\CreateAgendamentoDto.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Domain\\Dtos\\AgendamentoDtos\\CreateAgendamentoDto.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\AgendamentoDtos\\CreateAgendamentoDto.cs",
-              "RelativeToolTip": "RatingBooks.Domain\\Dtos\\AgendamentoDtos\\CreateAgendamentoDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:49:24.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LivroController.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\LivroController.cs",
-              "RelativeDocumentMoniker": "RatingBooks\\Controllers\\LivroController.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\LivroController.cs",
-              "RelativeToolTip": "RatingBooks\\Controllers\\LivroController.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAmwHkAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:51:40.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Application\\Services\\UsuarioService.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\UsuarioService.cs",
-              "RelativeToolTip": "RatingBooks.Application\\Services\\UsuarioService.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAewCYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:51:31.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetAgendamentoDto.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\AgendamentoDtos\\GetAgendamentoDto.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Domain\\Dtos\\AgendamentoDtos\\GetAgendamentoDto.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\AgendamentoDtos\\GetAgendamentoDto.cs",
-              "RelativeToolTip": "RatingBooks.Domain\\Dtos\\AgendamentoDtos\\GetAgendamentoDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:50:01.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "RatingBooks\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "RatingBooks\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:47:35.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ILivroRepository.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Repository\\ILivroRepository.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Domain\\Repository\\ILivroRepository.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Repository\\ILivroRepository.cs",
-              "RelativeToolTip": "RatingBooks.Domain\\Repository\\ILivroRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:37:08.642Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LivroService.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\LivroService.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Application\\Services\\LivroService.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Application\\Services\\LivroService.cs",
-              "RelativeToolTip": "RatingBooks.Application\\Services\\LivroService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwCkAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:51:33.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AgendamentoProfile.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Persistance\\Mapping\\Profiles\\AgendamentoProfile.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Persistance\\Mapping\\Profiles\\AgendamentoProfile.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Persistance\\Mapping\\Profiles\\AgendamentoProfile.cs",
-              "RelativeToolTip": "RatingBooks.Persistance\\Mapping\\Profiles\\AgendamentoProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T19:20:20.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UpdateAgendamentoDto.cs",
-              "DocumentMoniker": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\AgendamentoDtos\\UpdateAgendamentoDto.cs",
-              "RelativeDocumentMoniker": "RatingBooks.Domain\\Dtos\\AgendamentoDtos\\UpdateAgendamentoDto.cs",
-              "ToolTip": "C:\\Users\\J\\source\\repos\\RatingBooks\\RatingBooks.Domain\\Dtos\\AgendamentoDtos\\UpdateAgendamentoDto.cs",
-              "RelativeToolTip": "RatingBooks.Domain\\Dtos\\AgendamentoDtos\\UpdateAgendamentoDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T01:56:36.443Z"
             }
           ]
         }

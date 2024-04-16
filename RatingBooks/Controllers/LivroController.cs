@@ -24,7 +24,7 @@ namespace RatingBooks.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            if (!_statusLivro.statusLivroArray.Contains(livroDto.Status))
+            if (!_statusLivro.statusLivroArray.Contains(livroDto.Status.ToUpper()))
                 return BadRequest("O status do livro necessita ser inserido corretamente");
 
             if (!User.Identity.IsAuthenticated)
@@ -33,6 +33,8 @@ namespace RatingBooks.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var resultado = await _livroService.CriarLivro(livroDto, userId);
+
+
 
             return Ok(resultado);
         }

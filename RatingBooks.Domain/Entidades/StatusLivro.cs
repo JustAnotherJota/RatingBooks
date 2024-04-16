@@ -5,7 +5,7 @@
         public string[] statusLivroArray;
         public StatusLivro()
         {
-            statusLivroArray = new string[] { "Começo", "Meio", "Final", "Finalizado" };
+            statusLivroArray = new string[] { "COMEÇO", "MEIO", "FINAL", "FINALIZADO" };
         }
     }
 }
